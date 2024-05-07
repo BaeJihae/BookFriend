@@ -16,7 +16,62 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: scene.coordinateSpace.bounds)
+        window?.windowScene = scene
+        
+        let tabBarVC = CustomTabBarController()
+        
+        let recommendVC = RecommendViewController()
+        let recommentNav = UINavigationController(rootViewController: recommendVC)
+        let recommentItem = UITabBarItem(title: TabItem.recommend.rawValue,
+                                               image: UIImage(named: "recommend"),
+                                               tag: 0)
+        recommentItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        recommentItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
+        recommentNav.tabBarItem = recommentItem
+        
+        let myBookStoreVC = MyBookStoreViewController()
+        let myBookStoreNav = UINavigationController(rootViewController: myBookStoreVC)
+        let myBookStoreItem = UITabBarItem(title: TabItem.myBookStore.rawValue,
+                                                 image: UIImage(named: "library_books"),
+                                                 tag: 1)
+        myBookStoreItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        myBookStoreItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
+        myBookStoreNav.tabBarItem = myBookStoreItem
+        
+        let searchVC = SearchViewController()
+        let searchNav = UINavigationController(rootViewController: searchVC)
+        let searchItem = UITabBarItem(title: TabItem.search.rawValue,
+                                            image: UIImage(named: "search"),
+                                            tag: 2)
+        searchItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        searchItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
+        searchNav.tabBarItem = searchItem
+        
+        let bookRecordVC = BookRecordViewController()
+        let bookRecordNav = UINavigationController(rootViewController: bookRecordVC)
+        let bookRecordItem = UITabBarItem(title: TabItem.bookRecord.rawValue,
+                                                image: UIImage(named: "edit_square"),
+                                                tag: 3)
+        bookRecordItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        bookRecordItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
+        bookRecordNav.tabBarItem = bookRecordItem
+        
+        let settingVC = SettingViewController()
+        let settingItem = UITabBarItem(title: TabItem.setting.rawValue,
+                                            image: UIImage(named: "setting"),
+                                            tag: 4)
+        settingItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        settingItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
+        settingVC.tabBarItem = settingItem
+        
+        
+        tabBarVC.setViewControllers([recommentNav, myBookStoreNav, searchNav, bookRecordNav, settingVC],
+                                animated: true)
+        
+        window?.rootViewController = tabBarVC
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

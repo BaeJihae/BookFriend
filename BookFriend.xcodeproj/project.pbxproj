@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */; };
 		2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */; };
-		2EB8F7BB2BEA1C2400FD3B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7BA2BEA1C2400FD3B10 /* ViewController.swift */; };
-		2EB8F7BE2BEA1C2400FD3B10 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F7BD2BEA1C2400FD3B10 /* Base */; };
 		2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7BF2BEA1C2400FD3B10 /* BookFriend.xcdatamodeld */; };
 		2EB8F7C32BEA1C2600FD3B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F7C22BEA1C2600FD3B10 /* Assets.xcassets */; };
 		2EB8F7C62BEA1C2600FD3B10 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F7C52BEA1C2600FD3B10 /* Base */; };
@@ -19,18 +17,58 @@
 		2EB8F7D42BEA1DEC00FD3B10 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F7D32BEA1DEC00FD3B10 /* Alamofire */; };
 		2EB8F7D62BEA1DEC00FD3B10 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F7D52BEA1DEC00FD3B10 /* AlamofireDynamic */; };
 		2EB8F7D92BEA1DF300FD3B10 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F7D82BEA1DF300FD3B10 /* Kingfisher */; };
+		2EF8DEA32BEA220F006E84D2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEA22BEA220F006E84D2 /* TabItem.swift */; };
+		2EF8DEA52BEA2546006E84D2 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEA42BEA2546006E84D2 /* RecommendViewController.swift */; };
+		2EF8DEA72BEA2646006E84D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEA62BEA2646006E84D2 /* SearchViewController.swift */; };
+		2EF8DEAB2BEA2908006E84D2 /* MyBookStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEAA2BEA2908006E84D2 /* MyBookStoreViewController.swift */; };
+		2EF8DEAD2BEA2917006E84D2 /* BookRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */; };
+		2EF8DEAF2BEA2923006E84D2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */; };
+		2EF8DEB12BEA298E006E84D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB02BEA298E006E84D2 /* ViewController.swift */; };
+		2EF8DEB32BEA4234006E84D2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB22BEA4234006E84D2 /* CustomTabBarController.swift */; };
+		2EF8DEC22BEA4F0A006E84D2 /* UIFont+AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */; };
+		2EF8DEC62BEA556D006E84D2 /* SBAggro-B.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEC32BEA5369006E84D2 /* SBAggro-B.otf */; };
+		2EF8DEC72BEA5571006E84D2 /* SBAggro-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEC42BEA5369006E84D2 /* SBAggro-L.otf */; };
+		2EF8DEC82BEA5573006E84D2 /* SBAggro-R.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEC52BEA5369006E84D2 /* SBAggro-R.otf */; };
+		2EF8DEC92BEA57AC006E84D2 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEBB2BEA4774006E84D2 /* Pretendard-Black.otf */; };
+		2EF8DECA2BEA57AF006E84D2 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB82BEA4773006E84D2 /* Pretendard-Bold.otf */; };
+		2EF8DECB2BEA57B1006E84D2 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEBD2BEA4774006E84D2 /* Pretendard-ExtraBold.otf */; };
+		2EF8DECC2BEA57B4006E84D2 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB62BEA4773006E84D2 /* Pretendard-ExtraLight.otf */; };
+		2EF8DECD2BEA57B7006E84D2 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEBC2BEA4774006E84D2 /* Pretendard-Light.otf */; };
+		2EF8DECE2BEA57B9006E84D2 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEBA2BEA4773006E84D2 /* Pretendard-Medium.otf */; };
+		2EF8DECF2BEA57BC006E84D2 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB72BEA4773006E84D2 /* Pretendard-Regular.otf */; };
+		2EF8DED02BEA57BE006E84D2 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB52BEA4773006E84D2 /* Pretendard-SemiBold.otf */; };
+		2EF8DED12BEA57C1006E84D2 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8DEB92BEA4773006E84D2 /* Pretendard-Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2EB8F7B32BEA1C2400FD3B10 /* BookFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2EB8F7BA2BEA1C2400FD3B10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2EB8F7BD2BEA1C2400FD3B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EB8F7C02BEA1C2400FD3B10 /* BookFriend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookFriend.xcdatamodel; sourceTree = "<group>"; };
 		2EB8F7C22BEA1C2600FD3B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EB8F7C52BEA1C2600FD3B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EB8F7C72BEA1C2600FD3B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF8DEA22BEA220F006E84D2 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		2EF8DEA42BEA2546006E84D2 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		2EF8DEA62BEA2646006E84D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2EF8DEAA2BEA2908006E84D2 /* MyBookStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookStoreViewController.swift; sourceTree = "<group>"; };
+		2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRecordViewController.swift; sourceTree = "<group>"; };
+		2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2EF8DEB02BEA298E006E84D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EF8DEB22BEA4234006E84D2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		2EF8DEB52BEA4773006E84D2 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		2EF8DEB62BEA4773006E84D2 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		2EF8DEB72BEA4773006E84D2 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		2EF8DEB82BEA4773006E84D2 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		2EF8DEB92BEA4773006E84D2 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		2EF8DEBA2BEA4773006E84D2 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		2EF8DEBB2BEA4774006E84D2 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		2EF8DEBC2BEA4774006E84D2 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		2EF8DEBD2BEA4774006E84D2 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFonts.swift"; sourceTree = "<group>"; };
+		2EF8DEC32BEA5369006E84D2 /* SBAggro-B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBAggro-B.otf"; sourceTree = "<group>"; };
+		2EF8DEC42BEA5369006E84D2 /* SBAggro-L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBAggro-L.otf"; sourceTree = "<group>"; };
+		2EF8DEC52BEA5369006E84D2 /* SBAggro-R.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SBAggro-R.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +106,59 @@
 		2EB8F7B52BEA1C2400FD3B10 /* BookFriend */ = {
 			isa = PBXGroup;
 			children = (
+				2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */,
 				2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */,
 				2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */,
-				2EB8F7BA2BEA1C2400FD3B10 /* ViewController.swift */,
-				2EB8F7BC2BEA1C2400FD3B10 /* Main.storyboard */,
+				2EF8DEA92BEA26DB006E84D2 /* Model */,
+				2EF8DEA82BEA26C3006E84D2 /* Controller */,
 				2EB8F7C22BEA1C2600FD3B10 /* Assets.xcassets */,
 				2EB8F7C42BEA1C2600FD3B10 /* LaunchScreen.storyboard */,
 				2EB8F7C72BEA1C2600FD3B10 /* Info.plist */,
 				2EB8F7BF2BEA1C2400FD3B10 /* BookFriend.xcdatamodeld */,
+				2EF8DEB42BEA4752006E84D2 /* Fonts */,
 			);
 			path = BookFriend;
+			sourceTree = "<group>";
+		};
+		2EF8DEA82BEA26C3006E84D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEB02BEA298E006E84D2 /* ViewController.swift */,
+				2EF8DEA62BEA2646006E84D2 /* SearchViewController.swift */,
+				2EF8DEA42BEA2546006E84D2 /* RecommendViewController.swift */,
+				2EF8DEAA2BEA2908006E84D2 /* MyBookStoreViewController.swift */,
+				2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */,
+				2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */,
+				2EF8DEB22BEA4234006E84D2 /* CustomTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2EF8DEA92BEA26DB006E84D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEA22BEA220F006E84D2 /* TabItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EF8DEB42BEA4752006E84D2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEC52BEA5369006E84D2 /* SBAggro-R.otf */,
+				2EF8DEC32BEA5369006E84D2 /* SBAggro-B.otf */,
+				2EF8DEC42BEA5369006E84D2 /* SBAggro-L.otf */,
+				2EF8DEBB2BEA4774006E84D2 /* Pretendard-Black.otf */,
+				2EF8DEB82BEA4773006E84D2 /* Pretendard-Bold.otf */,
+				2EF8DEBD2BEA4774006E84D2 /* Pretendard-ExtraBold.otf */,
+				2EF8DEB62BEA4773006E84D2 /* Pretendard-ExtraLight.otf */,
+				2EF8DEBC2BEA4774006E84D2 /* Pretendard-Light.otf */,
+				2EF8DEBA2BEA4773006E84D2 /* Pretendard-Medium.otf */,
+				2EF8DEB72BEA4773006E84D2 /* Pretendard-Regular.otf */,
+				2EF8DEB52BEA4773006E84D2 /* Pretendard-SemiBold.otf */,
+				2EF8DEB92BEA4773006E84D2 /* Pretendard-Thin.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +231,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF8DECC2BEA57B4006E84D2 /* Pretendard-ExtraLight.otf in Resources */,
+				2EF8DECF2BEA57BC006E84D2 /* Pretendard-Regular.otf in Resources */,
 				2EB8F7C32BEA1C2600FD3B10 /* Assets.xcassets in Resources */,
+				2EF8DED02BEA57BE006E84D2 /* Pretendard-SemiBold.otf in Resources */,
+				2EF8DEC62BEA556D006E84D2 /* SBAggro-B.otf in Resources */,
+				2EF8DECD2BEA57B7006E84D2 /* Pretendard-Light.otf in Resources */,
+				2EF8DECB2BEA57B1006E84D2 /* Pretendard-ExtraBold.otf in Resources */,
+				2EF8DECA2BEA57AF006E84D2 /* Pretendard-Bold.otf in Resources */,
+				2EF8DEC82BEA5573006E84D2 /* SBAggro-R.otf in Resources */,
+				2EF8DED12BEA57C1006E84D2 /* Pretendard-Thin.otf in Resources */,
+				2EF8DEC72BEA5571006E84D2 /* SBAggro-L.otf in Resources */,
+				2EF8DEC92BEA57AC006E84D2 /* Pretendard-Black.otf in Resources */,
 				2EB8F7C62BEA1C2600FD3B10 /* Base in Resources */,
-				2EB8F7BE2BEA1C2400FD3B10 /* Base in Resources */,
+				2EF8DECE2BEA57B9006E84D2 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,24 +255,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB8F7BB2BEA1C2400FD3B10 /* ViewController.swift in Sources */,
+				2EF8DEB12BEA298E006E84D2 /* ViewController.swift in Sources */,
+				2EF8DEA32BEA220F006E84D2 /* TabItem.swift in Sources */,
 				2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */,
+				2EF8DEAD2BEA2917006E84D2 /* BookRecordViewController.swift in Sources */,
 				2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */,
+				2EF8DEB32BEA4234006E84D2 /* CustomTabBarController.swift in Sources */,
+				2EF8DEA72BEA2646006E84D2 /* SearchViewController.swift in Sources */,
+				2EF8DEC22BEA4F0A006E84D2 /* UIFont+AppFonts.swift in Sources */,
+				2EF8DEAF2BEA2923006E84D2 /* SettingViewController.swift in Sources */,
 				2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */,
+				2EF8DEAB2BEA2908006E84D2 /* MyBookStoreViewController.swift in Sources */,
+				2EF8DEA52BEA2546006E84D2 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2EB8F7BC2BEA1C2400FD3B10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EB8F7BD2BEA1C2400FD3B10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2EB8F7C42BEA1C2600FD3B10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -323,7 +415,7 @@
 				INFOPLIST_FILE = BookFriend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -356,7 +448,7 @@
 				INFOPLIST_FILE = BookFriend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
