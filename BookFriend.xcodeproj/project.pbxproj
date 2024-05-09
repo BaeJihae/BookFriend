@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E827E712BEB959200D376B0 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E702BEB959200D376B0 /* BarcodeViewController.swift */; };
+		2E827E732BEBF67700D376B0 /* SearchSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E722BEBF67700D376B0 /* SearchSection.swift */; };
+		2E827E752BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */; };
+		2E827E772BEC8C1800D376B0 /* SectionHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */; };
+		2E827E792BEC8CC700D376B0 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */; };
+		2E827E7B2BECE0EA00D376B0 /* PreviousBookRecordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */; };
 		2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */; };
 		2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */; };
 		2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7BF2BEA1C2400FD3B10 /* BookFriend.xcdatamodeld */; };
@@ -41,6 +47,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E827E702BEB959200D376B0 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		2E827E722BEBF67700D376B0 /* SearchSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSection.swift; sourceTree = "<group>"; };
+		2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionView.swift; sourceTree = "<group>"; };
+		2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousBookRecordCollectionViewCell.swift; sourceTree = "<group>"; };
 		2EB8F7B32BEA1C2400FD3B10 /* BookFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */,
+				2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */,
 				2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */,
 				2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */,
 				2EF8DEA92BEA26DB006E84D2 /* Model */,
@@ -130,6 +143,10 @@
 				2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */,
 				2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */,
 				2EF8DEB22BEA4234006E84D2 /* CustomTabBarController.swift */,
+				2E827E702BEB959200D376B0 /* BarcodeViewController.swift */,
+				2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */,
+				2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */,
+				2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -138,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF8DEA22BEA220F006E84D2 /* TabItem.swift */,
+				2E827E722BEBF67700D376B0 /* SearchSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,15 +276,21 @@
 				2EF8DEB12BEA298E006E84D2 /* ViewController.swift in Sources */,
 				2EF8DEA32BEA220F006E84D2 /* TabItem.swift in Sources */,
 				2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */,
+				2E827E772BEC8C1800D376B0 /* SectionHeaderCollectionView.swift in Sources */,
 				2EF8DEAD2BEA2917006E84D2 /* BookRecordViewController.swift in Sources */,
 				2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */,
+				2E827E792BEC8CC700D376B0 /* UIColor+AppColors.swift in Sources */,
 				2EF8DEB32BEA4234006E84D2 /* CustomTabBarController.swift in Sources */,
 				2EF8DEA72BEA2646006E84D2 /* SearchViewController.swift in Sources */,
+				2E827E732BEBF67700D376B0 /* SearchSection.swift in Sources */,
 				2EF8DEC22BEA4F0A006E84D2 /* UIFont+AppFonts.swift in Sources */,
 				2EF8DEAF2BEA2923006E84D2 /* SettingViewController.swift in Sources */,
 				2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */,
+				2E827E7B2BECE0EA00D376B0 /* PreviousBookRecordCollectionViewCell.swift in Sources */,
 				2EF8DEAB2BEA2908006E84D2 /* MyBookStoreViewController.swift in Sources */,
+				2E827E752BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift in Sources */,
 				2EF8DEA52BEA2546006E84D2 /* RecommendViewController.swift in Sources */,
+				2E827E712BEB959200D376B0 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
