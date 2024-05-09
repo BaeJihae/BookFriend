@@ -37,9 +37,9 @@ class BookDetailViewController: UIViewController {
         return stackView
     }()
     
-    let tableSection: [BookDetailSection] = [.bookHeader, .bookDetail]
+    private let tableSection: [BookDetailSection] = [.bookHeader, .bookDetail]
     
-    var data = [("지은이","배지해"),("출판사","감자를 좋아하는 출판사"),("페이지","1,420p"),("가격","32,000원"),("책소개","안녕하세요 저는 배지해입니다. 어렸을 때 부터 이 책을 매우매우 좋아하였는데요?! 사랑합니다ㅎㅎㅎ ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ")]
+    private var data = [("지은이","배지해"),("출판사","감자를 좋아하는 출판사"),("페이지","1,420p"),("가격","32,000원"),("책소개","안녕하세요 저는 배지해입니다. 어렸을 때 부터 이 책을 매우매우 좋아하였는데요?! 사랑합니다ㅎㅎㅎ ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ")]
 
     // MARK: - ViewWillAppear
     override func viewWillAppear(_ animated: Bool) {
@@ -64,13 +64,13 @@ class BookDetailViewController: UIViewController {
     }
     
     // MARK: - 배경 설정
-    func setupBackground() {
+    private func setupBackground() {
         
         self.view.backgroundColor = .white
     }
     
     // MARK: - 네비게이션바 설정
-    func setupNavigationBar() {
+    private func setupNavigationBar() {
     
         // 네비게이션 타이틀 설정
         self.navigationItem.title = "책 정보"
@@ -79,7 +79,7 @@ class BookDetailViewController: UIViewController {
     }
     
     // MARK: - 테이블뷰 설정
-    func setupTableView() {
+    private func setupTableView() {
         bookDetailTableView.dataSource = self
         bookDetailTableView.delegate = self
         
@@ -96,7 +96,7 @@ class BookDetailViewController: UIViewController {
     }
     
     // MARK: - 버튼 스택뷰 설정
-    func setupStackViewConstrains() {
+    private func setupStackViewConstrains() {
         bookButtonStackView.layer.cornerRadius = 20
         bookButtonStackView.layer.masksToBounds = true
         
@@ -108,7 +108,7 @@ class BookDetailViewController: UIViewController {
     }
     
     // MARK: - button Configuration
-    func buttonConfiguration(title: String, image: String) -> UIButton{
+    private func buttonConfiguration(title: String, image: String) -> UIButton{
         
         var configuration = UIButton.Configuration.filled()
         var titleAttributes = AttributeContainer()

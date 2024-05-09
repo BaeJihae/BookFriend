@@ -16,6 +16,10 @@
 		2E827E7D2BED02EF00D376B0 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E7C2BED02EF00D376B0 /* BookDetailViewController.swift */; };
 		2E827E862BED0B2700D376B0 /* BookDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E852BED0B2700D376B0 /* BookDetailTableViewCell.swift */; };
 		2E827E882BED0B3700D376B0 /* BookHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E872BED0B3700D376B0 /* BookHeaderTableViewCell.swift */; };
+		2E827E8A2BED45E900D376B0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E892BED45E900D376B0 /* UIViewController+Extension.swift */; };
+		2EAEA68F2BED5D6E0046ABED /* BookListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAEA68E2BED5D6D0046ABED /* BookListCollectionViewCell.swift */; };
+		2EAEA6912BED642B0046ABED /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAEA6902BED642B0046ABED /* BookListView.swift */; };
+		2EAEA6932BED70E00046ABED /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAEA6922BED70E00046ABED /* PaddedLabel.swift */; };
 		2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */; };
 		2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */; };
 		2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7BF2BEA1C2400FD3B10 /* BookFriend.xcdatamodeld */; };
@@ -59,6 +63,10 @@
 		2E827E7C2BED02EF00D376B0 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		2E827E852BED0B2700D376B0 /* BookDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailTableViewCell.swift; sourceTree = "<group>"; };
 		2E827E872BED0B3700D376B0 /* BookHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		2E827E892BED45E900D376B0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2EAEA68E2BED5D6D0046ABED /* BookListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EAEA6902BED642B0046ABED /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		2EAEA6922BED70E00046ABED /* PaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
 		2EB8F7B32BEA1C2400FD3B10 /* BookFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 			children = (
 				2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */,
 				2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */,
+				2E827E892BED45E900D376B0 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -133,6 +142,13 @@
 			children = (
 				2EF8DEA62BEA2646006E84D2 /* SearchViewController.swift */,
 				2E827E7C2BED02EF00D376B0 /* BookDetailViewController.swift */,
+				2EF8DEAA2BEA2908006E84D2 /* MyBookStoreViewController.swift */,
+				2EF8DEA42BEA2546006E84D2 /* RecommendViewController.swift */,
+				2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */,
+				2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */,
+				2E827E702BEB959200D376B0 /* BarcodeViewController.swift */,
+				2EAEA6902BED642B0046ABED /* BookListView.swift */,
+				2EAEA6922BED70E00046ABED /* PaddedLabel.swift */,
 				2E827E842BED038600D376B0 /* TapBar */,
 				2E827E832BED037100D376B0 /* Header */,
 				2E827E822BED035B00D376B0 /* Cell */,
@@ -143,6 +159,7 @@
 		2E827E822BED035B00D376B0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2EAEA68E2BED5D6D0046ABED /* BookListCollectionViewCell.swift */,
 				2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */,
 				2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */,
 				2E827E852BED0B2700D376B0 /* BookDetailTableViewCell.swift */,
@@ -186,17 +203,17 @@
 		2EB8F7B52BEA1C2400FD3B10 /* BookFriend */ = {
 			isa = PBXGroup;
 			children = (
-				2E827E7E2BED031D00D376B0 /* Extension */,
 				2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */,
 				2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */,
+				2E827E7E2BED031D00D376B0 /* Extension */,
 				2EF8DEA92BEA26DB006E84D2 /* Model */,
-				2EF8DEA82BEA26C3006E84D2 /* Controller */,
 				2E827E812BED034A00D376B0 /* View */,
+				2EF8DEA82BEA26C3006E84D2 /* Controller */,
+				2EF8DEB42BEA4752006E84D2 /* Fonts */,
 				2EB8F7C22BEA1C2600FD3B10 /* Assets.xcassets */,
 				2EB8F7C42BEA1C2600FD3B10 /* LaunchScreen.storyboard */,
 				2EB8F7C72BEA1C2600FD3B10 /* Info.plist */,
 				2EB8F7BF2BEA1C2400FD3B10 /* BookFriend.xcdatamodeld */,
-				2EF8DEB42BEA4752006E84D2 /* Fonts */,
 			);
 			path = BookFriend;
 			sourceTree = "<group>";
@@ -205,11 +222,6 @@
 			isa = PBXGroup;
 			children = (
 				2EF8DEB02BEA298E006E84D2 /* ViewController.swift */,
-				2EF8DEA42BEA2546006E84D2 /* RecommendViewController.swift */,
-				2EF8DEAA2BEA2908006E84D2 /* MyBookStoreViewController.swift */,
-				2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */,
-				2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */,
-				2E827E702BEB959200D376B0 /* BarcodeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,17 +355,21 @@
 				2EF8DEA32BEA220F006E84D2 /* TabItem.swift in Sources */,
 				2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */,
 				2E827E772BEC8C1800D376B0 /* SectionHeaderCollectionView.swift in Sources */,
+				2EAEA68F2BED5D6E0046ABED /* BookListCollectionViewCell.swift in Sources */,
 				2EF8DEAD2BEA2917006E84D2 /* BookRecordViewController.swift in Sources */,
+				2EAEA6912BED642B0046ABED /* BookListView.swift in Sources */,
 				2E827E862BED0B2700D376B0 /* BookDetailTableViewCell.swift in Sources */,
 				2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */,
 				2E827E792BEC8CC700D376B0 /* UIColor+AppColors.swift in Sources */,
 				2EF8DEB32BEA4234006E84D2 /* CustomTabBarController.swift in Sources */,
 				2EF8DEA72BEA2646006E84D2 /* SearchViewController.swift in Sources */,
 				2E827E732BEBF67700D376B0 /* Section.swift in Sources */,
+				2E827E8A2BED45E900D376B0 /* UIViewController+Extension.swift in Sources */,
 				2EF8DEC22BEA4F0A006E84D2 /* UIFont+AppFonts.swift in Sources */,
 				2EF8DEAF2BEA2923006E84D2 /* SettingViewController.swift in Sources */,
 				2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */,
 				2E827E7B2BECE0EA00D376B0 /* PreviousBookRecordCollectionViewCell.swift in Sources */,
+				2EAEA6932BED70E00046ABED /* PaddedLabel.swift in Sources */,
 				2EF8DEAB2BEA2908006E84D2 /* MyBookStoreViewController.swift in Sources */,
 				2E827E7D2BED02EF00D376B0 /* BookDetailViewController.swift in Sources */,
 				2E827E752BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift in Sources */,
@@ -510,7 +526,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,7 +559,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

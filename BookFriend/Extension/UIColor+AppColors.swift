@@ -11,4 +11,5 @@ extension UIColor {
     static let mainColor = UIColor(named: "mainBFColor")
     static let blackColor = UIColor(named: "blackBFColor")
     static let textColor = UIColor(named: "textBFColor")
+    static let lightGrayColor = UIColor(named: "lightGrayBFColor")
 }

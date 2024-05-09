@@ -42,13 +42,13 @@ class SearchViewController: UIViewController {
     }
     
     // MARK: - 배경 설정
-    func setupBackground() {
+    private func setupBackground() {
         
         self.view.backgroundColor = .white
     }
     
     // MARK: - 네비게이션바 설정
-    func setupNavigationBar() {
+    private func setupNavigationBar() {
         
         // 네비게이션 타이틀 설정
         self.navigationItem.title = "책 검색"
@@ -78,7 +78,7 @@ class SearchViewController: UIViewController {
     }
     
     // MARK: - CollectionView 설정
-    func setupCollectionView() {
+    private func setupCollectionView() {
         
         view.addSubview(searchCollectionView)
         searchCollectionView.collectionViewLayout = makeFlowLayout()
@@ -117,7 +117,7 @@ extension SearchViewController: UISearchBarDelegate {
     }
     
     // searchText
-    func filterItems(with searchText: String) {
+    private func filterItems(with searchText: String) {
         
         if searchText.isEmpty {
             print("검색하려는 메세지가 없습니다.")
