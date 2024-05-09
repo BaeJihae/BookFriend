@@ -25,7 +25,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+    
         self.searchCollectionView.dataSource = self
         self.searchCollectionView.delegate = self
         searchCollectionView.register(SectionHeaderCollectionView.self,
@@ -52,7 +52,7 @@ class SearchViewController: UIViewController {
         
         // 네비게이션 타이틀 설정
         self.navigationItem.title = "책 검색"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: 
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font:
                                                                             UIFont.aggro(size: 20, weight: .medium)]
         
         // 바코드 버튼 설정
@@ -256,6 +256,19 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
             return header
         default:
             return UICollectionReusableView()
+        }
+    }
+    
+    // MARK: - CollectionCell 눌렀을 때 동작
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        switch dataSource[indexPath.section] {
+        case .previousSearch(let data):
+            print("\(data[indexPath.row])가 선택됨.")
+        case .previousBookRecord(let data):
+            let bookDetailVC = BookDetailViewController()
+            self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            navigationController?.pushViewController(bookDetailVC, animated: true)
         }
     }
 }

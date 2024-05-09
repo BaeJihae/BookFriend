@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E827E712BEB959200D376B0 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E702BEB959200D376B0 /* BarcodeViewController.swift */; };
-		2E827E732BEBF67700D376B0 /* SearchSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E722BEBF67700D376B0 /* SearchSection.swift */; };
+		2E827E732BEBF67700D376B0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E722BEBF67700D376B0 /* Section.swift */; };
 		2E827E752BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */; };
 		2E827E772BEC8C1800D376B0 /* SectionHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */; };
 		2E827E792BEC8CC700D376B0 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */; };
 		2E827E7B2BECE0EA00D376B0 /* PreviousBookRecordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */; };
+		2E827E7D2BED02EF00D376B0 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E7C2BED02EF00D376B0 /* BookDetailViewController.swift */; };
+		2E827E862BED0B2700D376B0 /* BookDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E852BED0B2700D376B0 /* BookDetailTableViewCell.swift */; };
+		2E827E882BED0B3700D376B0 /* BookHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E827E872BED0B3700D376B0 /* BookHeaderTableViewCell.swift */; };
 		2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */; };
 		2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */; };
 		2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F7BF2BEA1C2400FD3B10 /* BookFriend.xcdatamodeld */; };
@@ -48,11 +51,14 @@
 
 /* Begin PBXFileReference section */
 		2E827E702BEB959200D376B0 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
-		2E827E722BEBF67700D376B0 /* SearchSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSection.swift; sourceTree = "<group>"; };
+		2E827E722BEBF67700D376B0 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionView.swift; sourceTree = "<group>"; };
 		2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousBookRecordCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E827E7C2BED02EF00D376B0 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		2E827E852BED0B2700D376B0 /* BookDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailTableViewCell.swift; sourceTree = "<group>"; };
+		2E827E872BED0B3700D376B0 /* BookHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		2EB8F7B32BEA1C2400FD3B10 /* BookFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E827E7E2BED031D00D376B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */,
+				2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2E827E7F2BED032F00D376B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E827E802BED033700D376B0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2E827E812BED034A00D376B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEA62BEA2646006E84D2 /* SearchViewController.swift */,
+				2E827E7C2BED02EF00D376B0 /* BookDetailViewController.swift */,
+				2E827E842BED038600D376B0 /* TapBar */,
+				2E827E832BED037100D376B0 /* Header */,
+				2E827E822BED035B00D376B0 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E827E822BED035B00D376B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */,
+				2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */,
+				2E827E852BED0B2700D376B0 /* BookDetailTableViewCell.swift */,
+				2E827E872BED0B3700D376B0 /* BookHeaderTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2E827E832BED037100D376B0 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2E827E842BED038600D376B0 /* TapBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEB22BEA4234006E84D2 /* CustomTabBarController.swift */,
+			);
+			path = TapBar;
+			sourceTree = "<group>";
+		};
 		2EB8F7AA2BEA1C2400FD3B10 = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +186,12 @@
 		2EB8F7B52BEA1C2400FD3B10 /* BookFriend */ = {
 			isa = PBXGroup;
 			children = (
-				2EF8DEC12BEA4F0A006E84D2 /* UIFont+AppFonts.swift */,
-				2E827E782BEC8CC700D376B0 /* UIColor+AppColors.swift */,
+				2E827E7E2BED031D00D376B0 /* Extension */,
 				2EB8F7B62BEA1C2400FD3B10 /* AppDelegate.swift */,
 				2EB8F7B82BEA1C2400FD3B10 /* SceneDelegate.swift */,
 				2EF8DEA92BEA26DB006E84D2 /* Model */,
 				2EF8DEA82BEA26C3006E84D2 /* Controller */,
+				2E827E812BED034A00D376B0 /* View */,
 				2EB8F7C22BEA1C2600FD3B10 /* Assets.xcassets */,
 				2EB8F7C42BEA1C2600FD3B10 /* LaunchScreen.storyboard */,
 				2EB8F7C72BEA1C2600FD3B10 /* Info.plist */,
@@ -137,16 +205,11 @@
 			isa = PBXGroup;
 			children = (
 				2EF8DEB02BEA298E006E84D2 /* ViewController.swift */,
-				2EF8DEA62BEA2646006E84D2 /* SearchViewController.swift */,
 				2EF8DEA42BEA2546006E84D2 /* RecommendViewController.swift */,
 				2EF8DEAA2BEA2908006E84D2 /* MyBookStoreViewController.swift */,
 				2EF8DEAC2BEA2917006E84D2 /* BookRecordViewController.swift */,
 				2EF8DEAE2BEA2923006E84D2 /* SettingViewController.swift */,
-				2EF8DEB22BEA4234006E84D2 /* CustomTabBarController.swift */,
 				2E827E702BEB959200D376B0 /* BarcodeViewController.swift */,
-				2E827E742BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift */,
-				2E827E7A2BECE0E900D376B0 /* PreviousBookRecordCollectionViewCell.swift */,
-				2E827E762BEC8C1800D376B0 /* SectionHeaderCollectionView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,8 +217,10 @@
 		2EF8DEA92BEA26DB006E84D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E827E802BED033700D376B0 /* CoreData */,
+				2E827E7F2BED032F00D376B0 /* Network */,
 				2EF8DEA22BEA220F006E84D2 /* TabItem.swift */,
-				2E827E722BEBF67700D376B0 /* SearchSection.swift */,
+				2E827E722BEBF67700D376B0 /* Section.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,21 +338,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E827E882BED0B3700D376B0 /* BookHeaderTableViewCell.swift in Sources */,
 				2EF8DEB12BEA298E006E84D2 /* ViewController.swift in Sources */,
 				2EF8DEA32BEA220F006E84D2 /* TabItem.swift in Sources */,
 				2EB8F7B72BEA1C2400FD3B10 /* AppDelegate.swift in Sources */,
 				2E827E772BEC8C1800D376B0 /* SectionHeaderCollectionView.swift in Sources */,
 				2EF8DEAD2BEA2917006E84D2 /* BookRecordViewController.swift in Sources */,
+				2E827E862BED0B2700D376B0 /* BookDetailTableViewCell.swift in Sources */,
 				2EB8F7C12BEA1C2400FD3B10 /* BookFriend.xcdatamodeld in Sources */,
 				2E827E792BEC8CC700D376B0 /* UIColor+AppColors.swift in Sources */,
 				2EF8DEB32BEA4234006E84D2 /* CustomTabBarController.swift in Sources */,
 				2EF8DEA72BEA2646006E84D2 /* SearchViewController.swift in Sources */,
-				2E827E732BEBF67700D376B0 /* SearchSection.swift in Sources */,
+				2E827E732BEBF67700D376B0 /* Section.swift in Sources */,
 				2EF8DEC22BEA4F0A006E84D2 /* UIFont+AppFonts.swift in Sources */,
 				2EF8DEAF2BEA2923006E84D2 /* SettingViewController.swift in Sources */,
 				2EB8F7B92BEA1C2400FD3B10 /* SceneDelegate.swift in Sources */,
 				2E827E7B2BECE0EA00D376B0 /* PreviousBookRecordCollectionViewCell.swift in Sources */,
 				2EF8DEAB2BEA2908006E84D2 /* MyBookStoreViewController.swift in Sources */,
+				2E827E7D2BED02EF00D376B0 /* BookDetailViewController.swift in Sources */,
 				2E827E752BEBF7A900D376B0 /* PreviousSearchCollectionViewCell.swift in Sources */,
 				2EF8DEA52BEA2546006E84D2 /* RecommendViewController.swift in Sources */,
 				2E827E712BEB959200D376B0 /* BarcodeViewController.swift in Sources */,
